@@ -68,6 +68,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\ServiceStack.Razor.4.0.16\lib\net45\ServiceStack.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="ServiceStack.Redis">
+      <HintPath>..\packages\ServiceStack.Redis.4.0.16\lib\net40\ServiceStack.Redis.dll</HintPath>
+    </Reference>
     <Reference Include="ServiceStack.Text, Version=4.0.16.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\ServiceStack.Text.4.0.16\lib\net40\ServiceStack.Text.dll</HintPath>
@@ -101,6 +104,8 @@
     <Content Include="Layouts\_Root.cshtml" />
     <Content Include="default.cshtml" />
     <Content Include="Views\ViewTodos.cshtml" />
+    <Content Include="login.cshtml" />
+    <Content Include="Layouts\_Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -112,7 +117,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Services\PingService.cs" />
     <Compile Include="App_Start\LanguageHandler.cs" />
     <Compile Include="Resources\Languages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

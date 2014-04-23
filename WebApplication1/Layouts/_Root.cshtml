@@ -7,32 +7,19 @@
         <title>Here's the title</title>
     </head>
     <body>
+        <div>
+            <h2>Login:</h2>
+            @Html.Partial("/Layouts/_Login")
+        </div>
         <div class="pure-g">
             <div class="sidebar pure-u-1 pure-u-med-1-4">
                 <div class="header">
                     
-                    <div>
-                        <h2>Show how many times Disposed class was disposed</h2>
-                        <p>
-                            Refreshing the ping service endpoint will show the count rising.
-                        </p>
-                        <p>
-                            Refreshing the async ping service endpoint will show the count stay at the same value.
-                        </p>
-
-                        <ul class="nav-list">
-                            <li class="nav-item">
-                                <a href="/ping">Sync ping service </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/async_ping">Async ping service </a>
-
-                            </li>
-                        </ul>
-                    </div>
+                    @RenderBody()
 
                 </div>
             </div>
         </div>
     </body>
 </html>
+
